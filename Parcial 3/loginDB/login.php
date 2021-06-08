@@ -44,13 +44,7 @@ if (isset($_SESSION['usuario'])) {
                 <input type="password" class="form-control"  id="contraseña" name="contraseña">
               </div>
               
-              <div class="d-flex mb-5 align-items-center">
-                <label class="control control--checkbox mb-0"><span class="caption">Recordarme</span>
-                  <input type="checkbox" checked="checked"/>
-                  <div class="control__indicator"></div>
-                </label>
-                <span class="ml-auto"><a href="#" class="forgot-pass">No recuerdo mi contraseña</a></span> 
-              </div>
+              
 <button class="btn btn-block btn-primary">Enviar</button>
            </form>
           </div>
