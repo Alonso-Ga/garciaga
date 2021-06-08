@@ -51,9 +51,8 @@ if (isset($_SESSION['usuario'])) {
                 </label>
                 <span class="ml-auto"><a href="#" class="forgot-pass">No recuerdo mi contraseña</a></span> 
               </div>
-<button>Enviar</button>
-            <input type="button" value="Iniciar Sesión" id="Verificacion" class="btn btn-block btn-primary" data-toggle="modal" data-target="#Modal">
-            </form>
+<button class="btn btn-block btn-primary">Enviar</button>
+           </form>
           </div>
         </div>
       </div>
