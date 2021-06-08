@@ -3,7 +3,7 @@
 
     $usuario = $_POST["usuario"];
     $password = $_POST["password"];
-    $password = hash("garciaga", $password); 
+    $password = hash("sha512", $password); 
 
     $query = "INSERT INTO usuarios (usuario, contraseña) VALUES('$usuario', '$password')";
 

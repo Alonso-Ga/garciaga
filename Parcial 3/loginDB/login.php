@@ -34,14 +34,14 @@ if (isset($_SESSION['usuario'])) {
           <div class="col-md-7">
             <h3>Login to <strong>Foursquare</strong></h3>
             <p class="mb-4">Life is GOOD</p>
-            <form action="#" method="post">
+            <form action="login_usuario.php" method="POST">
               <div class="form-group first">
                 <label for="username">Usuario</label>
-                <input type="text" class="form-control" placeholder="erick" id="username">
+                <input type="text" class="form-control"  id="usuario" name="usuario">
               </div>
               <div class="form-group last mb-3">
                 <label for="password">Contraseña</label>
-                <input type="password" class="form-control" placeholder="garcia" id="password">
+                <input type="password" class="form-control"  id="contraseña" name="contraseña">
               </div>
               
               <div class="d-flex mb-5 align-items-center">
@@ -51,8 +51,8 @@ if (isset($_SESSION['usuario'])) {
                 </label>
                 <span class="ml-auto"><a href="#" class="forgot-pass">No recuerdo mi contraseña</a></span> 
               </div>
-
-              <input type="button" value="Iniciar Sesión" id="Verificacion" class="btn btn-block btn-primary" data-toggle="modal" data-target="#Modal">
+<button>Enviar</button>
+            <input type="button" value="Iniciar Sesión" id="Verificacion" class="btn btn-block btn-primary" data-toggle="modal" data-target="#Modal">
             </form>
           </div>
         </div>

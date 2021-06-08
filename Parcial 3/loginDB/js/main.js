@@ -1,32 +1,16 @@
-$(function() {
+//Ejecutando funciones
+document.getElementById("btn__iniciar-sesion").addEventListener("click", iniciarSesion);
+document.getElementById("btn__registrarse").addEventListener("click", register);
+//window.addEventListener("resize", anchoPage);
 
-    $('.btn-link[aria-expanded="true"]').closest('.accordion-item').addClass('active');
-  $('.collapse').on('show.bs.collapse', function () {
-	  $(this).closest('.accordion-item').addClass('active');
-	});
+//Declarando variables
+var formulario_login = document.querySelector(".formulario__login");
+var formulario_register = document.querySelector(".formulario__register");
+var contenedor_login_register = document.querySelector(".contenedor__login-register");
+var caja_trasera_login = document.querySelector(".caja__trasera-login");
+var caja_trasera_register = document.querySelector(".caja__trasera-register");
 
-  $('.collapse').on('hidden.bs.collapse', function () {
-	  $(this).closest('.accordion-item').removeClass('active');
-	});
+    //FUNCIONES
 
-    $(document).ready(function()
- {
-          $("#Verificacion").click(function()
-					{
-            var usuario=$('#username').val();
-            var contrasena=$('#password').val();
 
-            if( usuario='Alonsolabile' && contrasena=='1234') 
-            {
-						$('.modal-body').html("Bienvenido PanaParce");
-            $('#Modal').modal('show');
-					 }
-            else 
-					 {
-              $('.modal-body').html("Ingrese las credenciales correctas");
-              $('#myModal').modal('show');
-           }
-             });
-         });
 
-});
