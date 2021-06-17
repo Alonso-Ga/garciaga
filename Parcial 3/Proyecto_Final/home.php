@@ -1,3 +1,10 @@
+<?php
+include 'conexion.php';
+//session_start();
+//if (isset($_SESSION['usuario'])) { 
+   // header("location: home.php");
+//}
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -28,29 +35,19 @@
           <div class="col-md-7">
             <h3>Login to <strong>Foursquare</strong></h3>
             <p class="mb-4">Life is GOOD</p>
-            <form action="#" method="post">
+            <form action="login_usuario.php" method="POST">
               <div class="form-group first">
                 <label for="username">Usuario</label>
-                <input type="text" class="form-control" placeholder="erick" id="username">
+                <input type="text" class="form-control"  id="usuario" name="usuario">
               </div>
               <div class="form-group last mb-3">
                 <label for="password">Contraseña</label>
-                <input type="password" class="form-control" placeholder="garcia" id="password">
+                <input type="password" class="form-control"  id="contraseña" name="contraseña">
               </div>
               
-              <div class="d-flex mb-5 align-items-center">
-                <label class="control control--checkbox mb-0"><span class="caption">Recordarme</span>
-                  <input type="checkbox" checked="checked"/>
-                  <div class="control__indicator"></div>
-                </label>
-                <span class="ml-auto"><a href="#" class="forgot-pass">No recuerdo mi contraseña</a></span> 
-                <button type="button" class="btn btn-primary" data-bs-toggle="Modal" data-bs-target="#exampleModal">
-                  Launch demo modal
-                </button>
-              </div>
-
-              <input type="button" value="Iniciar Sesión" id="Verificacion" class="btn btn-block btn-primary" data-toggle="modal" data-target="#Modal">
-            </form>
+              
+<button class="btn btn-block btn-primary">Enviar</button>
+           </form>
           </div>
         </div>
       </div>
